@@ -3,23 +3,25 @@
   <head>
     <meta charset="utf-8">
     <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-    <title>Watch Solo Adult Video HD | Mascot.ga</title>
+    <title>Watch Solo Adult Video HD | SoloPlay.ga</title>
 	<meta name="Description" content="Watch Solo Adult Video HD">
-	<meta name="Keywords" content="mascot creator">
+	<meta name="Keywords" content="SoloPlay creator">
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="css/styles.css">
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+	<script type="text/javascript" src="player/jwplayer.js"></script>
+	<script type="text/javascript">jwplayer.key="ZGtQfw6uw7dnz/lSqhUjyjbC3+PZmMvvBBAeFw==";</script>
   </head>
   <body>
     <div class="wrapper">
       <header>
-        <h1><a href="/"><i class="fa fa-paw"></i> Mascot.ga</a></h1>
-        <p>Create awesome mascots in seconds</p>
+        <h1><a href="/"><i class="fa fa-mercury"></i> SoloPlay.ga</a></h1>
+        <p>Create awesome SoloPlays in seconds</p>
         <ul>
           <li><a href="create.html">Start <strong>Create</strong></a></li>
           <li><a href="sample.html">View <strong>Sample</strong></a></li>
@@ -57,13 +59,24 @@ $ git checkout gh-pages
 
 <h3>
 <a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<div id="myElement"></div>
 
+<script>
+    jwplayer("myElement").setup({
+      file: "/uploads/myVideo.mp4",
+      image: "/uploads/myPoster.jpg",
+      width: "100%",
+      aspectratio: "16:9",
+	  abouttext: "test",
+	  aboutlink: "http://soloplay.ga",
+    });
+</script>
 <p>Having trouble with Pages? Check out the documentation at <a href="https://help.github.com/pages">https://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
       </section>
     </div>
     <footer>
-      <p>Project maintained by <a href="https://github.com/nixoza">nixoza</a></p>
-      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+      <p>Copyright <i class="fa fa-copyright"></i> 2014 <a href="http://soloplay.ga" title="Free Online SoloPlay Creator">SoloPlay.ga</a>. All rights reserved.</p>
+      <p>Hosted on GitHub Pages</p>
     </footer>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
