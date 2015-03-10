@@ -42,7 +42,7 @@
                         var htmlMascots = '';
                         mascots.sort();
                         jQuery.each(mascots, function (index, value) {
-                            htmlMascots += '<li class="mascot"><a href="watch/' + value + '.html"><img  src="thumb/' + value + '.jpg" class="lazy" data-original="thumb/' + value + '/.jpg" /><p>' + value.toUpperCase()
+                            htmlMascots += '<li class="mascot"><a href="watch/' + value + '.html"><img  src="thumb/' + value + '.jpg" class="lazy" data-original="thumb/' + value + '.jpg" /><p>' + value.toUpperCase()
                                 .replace(/-/g, ' ') + '</p></a></li>';
                         });
                         document.write(htmlMascots);
