@@ -36,13 +36,13 @@
       </header>
       <section>
 	  <div id="leftcol">
-            <div id="solothumb" class="center">
-                <ul id="solothumb">
+            <div id="mascots" class="center">
+                <ul id="mascot">
                     <script>
                         var htmlMascots = '';
                         mascots.sort();
                         jQuery.each(mascots, function (index, value) {
-                            htmlMascots += '<li class="mascot"><a href="watch/' + value + '.html"><img  src="img/thumb/' + value + '.jpg" class="lazy" data-original="img/thumb/' + value + '.jpg" /><p>VID-' + value.toUpperCase()
+                            htmlMascots += '<li class="mascot"><a href="watch/' + value + '.html"><img  src="thumb/' + value + '.jpg" class="lazy" data-original="thumb/' + value + '/.jpg" /><p>' + value.toUpperCase()
                                 .replace(/-/g, ' ') + '</p></a></li>';
                         });
                         document.write(htmlMascots);
@@ -77,15 +77,13 @@
     <script>
         $(function () {
             /* initiate lazyload defining a custom event to trigger image loading  */
-            $("ul li img")
-                .lazyload({
+            $("ul li img").lazyload({
                     event: "turnPage",
                     effect: "fadeIn"
                 });
             /* initiate plugin */
-            $("div.holder")
-                .jPages({
-                    containerID: "solothumb",
+            $("div.holder").jPages({
+                    containerID: "mascot",
                     direction: "random",
                     animation: "flipInY",
                     first: false,
