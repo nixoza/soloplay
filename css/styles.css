@@ -31,7 +31,14 @@ body {
   -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 1px, rgba(0, 0, 0, 0.45) 0 3px 10px;
   box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 1px, rgba(0, 0, 0, 0.45) 0 3px 10px;
 }
-
+#leftcol {
+    float: left;
+    width: 70%;
+}
+#rightcol {
+    float: left;
+    width: 30%;
+}
 header, section, footer {
   display: block;
 }
