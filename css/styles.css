@@ -168,11 +168,19 @@ section {
     margin: 0 5px;
     padding: 0;
 }
+#mascot {
+    display: block;
+    float: left;
+    margin: 0 5px;
+    padding: 0;
+}
 .mascot {
     background: none repeat scroll 0 0 #fff;
     float: left;
     list-style: outside none none;
     margin: 0;
+	padding: 5px;
+    width: 24%;
 }
 .mascot a {
     color: #595959;
@@ -181,11 +189,9 @@ section {
 .mascot img {
     background: none repeat scroll 0 0 #fff;
     border: 1px solid #f0f0f0;
-    height: 200px;
-	max-height: 100%;
+    height: auto;
     margin-bottom: 5px;
     padding: 0;
-    max-width: 250px;
 	width:100%;
 }
 .mascot:hover a {
@@ -446,6 +452,14 @@ footer p {
 footer p + p {
     float: none;
 }
+.mascot {
+    background: none repeat scroll 0 0 #fff;
+    float: left;
+    list-style: outside none none;
+    margin: 0;
+	padding: 5px;
+    width: 30%;
+}
 }
 @media print, screen and (max-width: 580px) {
 header ul {
@@ -455,6 +469,33 @@ header p.view {
     display: block;
 }
 header p {
+    width: 100%;
+}
+.mascot {
+    background: none repeat scroll 0 0 #fff;
+    float: left;
+    list-style: outside none none;
+    margin: 0;
+	padding: 5px;
+    width: 50%;
+}
+}
+@media print, screen and (max-width: 580px) {
+header ul {
+    display: none;
+}
+header p.view {
+    display: block;
+}
+header p {
+    width: 100%;
+}
+.mascot {
+    background: none repeat scroll 0 0 #fff;
+    float: left;
+    list-style: outside none none;
+    margin: 0;
+	padding: 5px;
     width: 100%;
 }
 }
